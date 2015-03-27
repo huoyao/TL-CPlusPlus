@@ -14,8 +14,16 @@ public:
   int pbdata;
   friend class FBase;
   friend class TFBase<MATF>;
+  void printt()
+  {
+    cout << "private member function ok" << endl;
+  }
 private:
   int data;
+  static void print()
+  {
+    cout << "function ok" << endl;
+  }
 protected:
   int prodata;
 };
@@ -28,6 +36,10 @@ public:
   TBase(const T &d):data(d){};
   ~TBase(){};
   friend class TFBase<T>;
+  void printtb()
+  {
+    Base::print();  //error:can not access private elemnt, though, compile successed
+  }
 protected:
 private:
   T data;
@@ -46,6 +58,8 @@ public:
   }
   void getData(const class Base &b)
   {
+    Base::print();
+    //Base::printt();  //compile error:illegal call of non-static member function
     cout << "Base class's private element:" << b.data << endl;
   }
 protected:
