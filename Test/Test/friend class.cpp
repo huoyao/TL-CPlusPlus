@@ -38,7 +38,7 @@ public:
   friend class TFBase<T>;
   void printtb()
   {
-    Base::print();  //error:can not access private elemnt, though, compile successed
+    Base::print();  //error:can not access private elemnt, though, it is static, compile successed
   }
 protected:
 private:
