@@ -13,5 +13,8 @@
     <ClCompile Include="polymorphic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="friend class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
