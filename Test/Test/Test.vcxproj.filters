@@ -5,6 +5,18 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{ae10b4bc-5c40-4739-8e3e-f837754f98b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{5579b919-124b-4f41-ad47-e55c9cb5fabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internship">
+      <UniqueIdentifier>{140bb820-863a-45fe-b7d1-282a27ad4d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda\headers">
+      <UniqueIdentifier>{9a817a7b-4443-4c53-bb44-9f1ff4dd2c0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shared_ptr.cpp">
@@ -19,5 +31,81 @@
     <ClCompile Include="lambda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fab mod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="list all subfolders and duplicate files.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="freeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="freelist_.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms1.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ms2.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ms3.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ms4.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ms33.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ali3.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="netease1.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="netease2.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-2.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-3.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-1.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="template_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="device class member.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="two-dimensional array.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="array parameter.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dirent.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="atomic.cuh">
+      <Filter>cuda\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>headers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
