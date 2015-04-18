@@ -17,6 +17,12 @@
     <Filter Include="cuda\headers">
       <UniqueIdentifier>{9a817a7b-4443-4c53-bb44-9f1ff4dd2c0b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="internship\GCJ2015">
+      <UniqueIdentifier>{3df1aac2-92b7-4b24-a0b5-84838208eba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internship\beauty of programming">
+      <UniqueIdentifier>{4e3c6ec9-9ac5-4668-922b-05f63948468a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shared_ptr.cpp">
@@ -41,9 +47,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="freelist_.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ms1.cpp">
@@ -84,6 +87,18 @@
     </ClCompile>
     <ClCompile Include="template.cpp">
       <Filter>headers</Filter>
+    </ClCompile>
+    <ClCompile Include="QR_problem_A.cpp">
+      <Filter>internship\GCJ2015</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="0-1_2_19.cpp">
+      <Filter>internship\beauty of programming</Filter>
+    </ClCompile>
+    <ClCompile Include="tx0.cpp">
+      <Filter>internship</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
