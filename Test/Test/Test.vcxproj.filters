@@ -23,6 +23,12 @@
     <Filter Include="internship\beauty of programming">
       <UniqueIdentifier>{4e3c6ec9-9ac5-4668-922b-05f63948468a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="internship\ms">
+      <UniqueIdentifier>{f0aea69f-919e-4f40-9578-c43fe3fcf379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{a39c0de3-623d-425e-98cd-bbb6c481a174}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shared_ptr.cpp">
@@ -48,18 +54,6 @@
     </ClCompile>
     <ClCompile Include="freelist_.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ms1.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="ms2.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="ms3.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="ms4.cpp">
-      <Filter>internship</Filter>
     </ClCompile>
     <ClCompile Include="ms33.cpp">
       <Filter>internship</Filter>
@@ -100,6 +94,57 @@
     <ClCompile Include="tx0.cpp">
       <Filter>internship</Filter>
     </ClCompile>
+    <ClCompile Include="ms1.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="ms2.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="ms3.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="ms4.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\factorial.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\singleton.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\ali-1-tree depth.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\ali_2_over half.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\bp_1.cpp">
+      <Filter>internship\beauty of programming</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\ms_2.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="bd2.cpp">
+      <Filter>internship\beauty of programming</Filter>
+    </ClCompile>
+    <ClCompile Include="360_1.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="ms2_qpj.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\ms_sh01.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="find position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sort3.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\morris traversal.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="device class member.cu">
@@ -109,6 +154,9 @@
       <Filter>cuda</Filter>
     </CudaCompile>
     <CudaCompile Include="array parameter.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda\thrust_test.cu">
       <Filter>cuda</Filter>
     </CudaCompile>
   </ItemGroup>

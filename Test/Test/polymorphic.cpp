@@ -8,7 +8,7 @@ public:
   base(){};
   base(const int &d1,const int &d2):data(d1), pbdata(d2){}
   base(const int &d):data(d),pbdata(d){}
-  ~base(){};
+  virtual ~base(){};
   virtual int getDeriveclassData() = 0;
   virtual int getData(){ return 0; };   //not pure virtual function, must be implemented
   int pbdata;  //public element
@@ -40,8 +40,8 @@ int derive::getData()
 }
 
 int main()
-{
-  //base bb; //error: abstract class, can not init a instance
+{       
+  //base bb; //error: abstract class, can not be used to initialize a instance
   base *b = NULL,*bb=NULL;  //abstract class, class pointer declare allowed
   {
     derive *d = new derive(12), *dd = new derive(1, 2);
