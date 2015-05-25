@@ -29,6 +29,9 @@
     <Filter Include="algorithm">
       <UniqueIdentifier>{a39c0de3-623d-425e-98cd-bbb6c481a174}</UniqueIdentifier>
     </Filter>
+    <Filter Include="internship\netease">
+      <UniqueIdentifier>{fe1387a5-ea7d-44e7-bfe0-fd36e942f052}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shared_ptr.cpp">
@@ -59,21 +62,6 @@
       <Filter>internship</Filter>
     </ClCompile>
     <ClCompile Include="ali3.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="netease1.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="netease2.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="netease3-2.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="netease3-3.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="netease3-1.cpp">
       <Filter>internship</Filter>
     </ClCompile>
     <ClCompile Include="template_test.cpp">
@@ -107,9 +95,6 @@
       <Filter>internship\ms</Filter>
     </ClCompile>
     <ClCompile Include="internship\factorial.cpp">
-      <Filter>internship</Filter>
-    </ClCompile>
-    <ClCompile Include="internship\singleton.cpp">
       <Filter>internship</Filter>
     </ClCompile>
     <ClCompile Include="internship\ali-1-tree depth.cpp">
@@ -146,6 +131,36 @@
       <Filter>algorithm</Filter>
     </ClCompile>
     <ClCompile Include="game_tangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="average 3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netease1.cpp">
+      <Filter>internship\netease</Filter>
+    </ClCompile>
+    <ClCompile Include="netease2.cpp">
+      <Filter>internship\netease</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-1.cpp">
+      <Filter>internship\netease</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-2.cpp">
+      <Filter>internship\netease</Filter>
+    </ClCompile>
+    <ClCompile Include="netease3-3.cpp">
+      <Filter>internship\netease</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\singleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\indeed_1.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="internship\indeed_2.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="Travel Information Center_tangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
