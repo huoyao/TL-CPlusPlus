@@ -11,14 +11,9 @@ struct Val
   Val(const int &a, const int &b, const int &c):top(a), left(b), right(c){}
 };
 
-inline int max33(const int &a, const int &b, const int &c)
-{
-  return max(max(a, b), c);
-}
-
 inline int max3(const Val &v)
 {
-  return max33(v.top, v.left, v.right);
+  return max(max(v.top, v.left), v.right);
 }
 
 int main()
@@ -28,20 +23,25 @@ int main()
   int **grid = (int **)malloc(sizeof(int *)*m);
   for(size_t i = 0;i < m;++i)
     grid[i] = (int *)malloc(sizeof(int)*n);
-  Val **rec = (Val **)malloc(sizeof(Val *)*m);
-  for(size_t i = 0;i < m;++i)
+  //record the value from top,left and right direction
+  Val **rec = (Val **)malloc(sizeof(Val *)*2);
+  for(size_t i = 0;i < 2;++i)
     rec[i] = (Val *)malloc(sizeof(Val)*n);
   //rotate input matrix
-  Val vl(-1,-1,-1);
   for(int i = n - 1;i >= 0;--i)
   {
     for(size_t j = 0;j < m;++j)
     {
       scanf("%d", &grid[j][i]);
-      rec[j][i]=vl;
     }
   }
-  //other lines
+  //initialize rec[2]
+  Val vl(-1, -1, -1);
+  for(size_t i = 0;i < 2;++i)
+    for(size_t j = 0;j < n;++j)
+      rec[i][j] = vl;
+  //process all lines
+  int id0 = 0, id1 = 1;
   for(size_t i = 0;i < m;++i)
   {
     for(size_t j = 0;j < n;++j)
@@ -50,46 +50,51 @@ int main()
       //top
       if(i == 0)
       {
-        rec[i][j].top = grid[i][j];
+        rec[id1][j].top = grid[i][j];
       } else
       {
-        if(grid[i - 1][j] != -1) rec[i][j].top = max3(rec[i - 1][j]) + grid[i][j];
-        else rec[i][j].top = -1;
+        if(grid[i - 1][j] != -1 && max3(rec[id0][j])!=-1) rec[id1][j].top = max3(rec[id0][j]) + grid[i][j];
+        else rec[id1][j].top = -1;
       }
       //left
-      if(j == 0) rec[i][j].left = rec[i][j].top;
+      if(j == 0) rec[id1][j].left = rec[id1][j].top;
       else if(j == n - 1)
       {
-        if(rec[i][0].top != -1) rec[i][j].left = grid[i][j];
-        if(rec[i][j - 1].left != -1) rec[i][j].left = max(rec[i][j].left, rec[i][j - 1].left + grid[i][j]);
-        rec[i][j].left = max33(rec[i][j - 1].left, rec[i][j].top, rec[i][j].left);
+        if(rec[id1][0].top != -1) rec[id1][j].left = grid[i][j];
+        if(rec[id1][j - 1].left != -1) rec[id1][j].left = max(rec[id1][j].left, rec[id1][j - 1].left + grid[i][j]);
+        rec[id1][j].left = max(rec[id1][j].top, rec[id1][j].left);
       }
-      else rec[i][j].left = rec[i][j - 1].left==-1?rec[i][j].top:max(rec[i][j - 1].left+grid[i][j], rec[i][j].top);
+      else rec[id1][j].left = rec[id1][j - 1].left == -1 ? rec[id1][j].top : max(rec[id1][j].top,rec[id1][j - 1].left + grid[i][j]);
     }
     //right
     for(int id = n - 1;id >= 0;--id)
     {
-      if(id == n - 1) rec[i][id].right = rec[i][id].top;
+      if(grid[i][id] == -1)continue;
+      if(id == n - 1) rec[id1][id].right = rec[id1][id].top;
       else if(id == 0)
       {
-        if(rec[i][n - 1].top != -1) rec[i][id].right = grid[i][id];
-        if(rec[i][id + 1].right != -1) rec[i][id].right = max(rec[i][id + 1].right + grid[i][id], rec[i][id].right);
-        rec[i][id].right = max33(rec[i][id + 1].right, rec[i][id].top, rec[i][id].right);
-      } else rec[i][id].right = rec[i][id + 1].right == -1 ? rec[i][id].top : max(rec[i][id + 1].right + grid[i][id], rec[i][id].top);
+        if(rec[id1][n - 1].top != -1) rec[id1][id].right = grid[i][id];
+        if(rec[id1][id + 1].right != -1) rec[id1][id].right = max(rec[id1][id + 1].right + grid[i][id], rec[id1][id].right);
+        rec[id1][id].right = max(rec[id1][id].right, rec[id1][id].top);
+      } else rec[id1][id].right = rec[id1][id + 1].right == -1 ? rec[id1][id].top : max(rec[id1][id].top,rec[id1][id + 1].right + grid[i][id]);
     }
+    swap(id0,id1);
+    //initialize rec[id1] for next loop
+    for(size_t i = 0;i < n;++i)
+      rec[id1][i] = vl;
   }
   //find the greatest one in last line
-  int res = max3(rec[m - 1][0]);
+  int res = max3(rec[id0][0]);
   for(size_t i = 1;i < n;++i)
   {
-    if(res < max3(rec[m - 1][i])) res = max3(rec[m-1][i]);
+    if(res < max3(rec[id0][i])) res = max3(rec[id0][i]);
   }
   printf("%d\n",res);
   //free memory
   for(size_t i = 0;i < m;++i)
     free(grid[i]);
   free(grid);
-  for(size_t i = 0;i < m;++i)
+  for(size_t i = 0;i < 2;++i)
     free(rec[i]);
   free(rec);
   return 0;
