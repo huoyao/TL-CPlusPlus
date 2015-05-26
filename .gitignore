@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.sdf
 
 # Precompiled Headers
 *.gch
@@ -21,6 +22,8 @@
 *.la
 *.a
 *.lib
+*.cu.deps
+*.deps
 
 # Executables
 *.exe

@@ -130,9 +130,6 @@
     <ClCompile Include="algorithm\morris traversal.cpp">
       <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="game_tangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="average 3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -161,7 +158,10 @@
       <Filter>internship</Filter>
     </ClCompile>
     <ClCompile Include="Travel Information Center_tangle.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="game_tangle.cpp">
+      <Filter>internship</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
