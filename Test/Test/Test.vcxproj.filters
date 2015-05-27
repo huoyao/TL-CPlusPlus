@@ -177,6 +177,12 @@
     <CudaCompile Include="cuda\thrust_test.cu">
       <Filter>cuda</Filter>
     </CudaCompile>
+    <CudaCompile Include="internship\cuda_prog_1.cu">
+      <Filter>internship</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_prop_0.cu">
+      <Filter>internship</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dirent.h">
@@ -188,5 +194,10 @@
     <ClInclude Include="template.h">
       <Filter>headers</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="internship\optimization.txt">
+      <Filter>internship</Filter>
+    </Text>
   </ItemGroup>
 </Project>

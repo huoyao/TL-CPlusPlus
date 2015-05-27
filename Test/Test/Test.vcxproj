@@ -222,9 +222,13 @@
     <CudaCompile Include="cuda\thrust_test.cu">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </CudaCompile>
+    <CudaCompile Include="cuda_prop_0.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CudaCompile>
     <CudaCompile Include="device class member.cu">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </CudaCompile>
+    <CudaCompile Include="internship\cuda_prog_1.cu" />
     <CudaCompile Include="two-dimensional array.cu">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </CudaCompile>
@@ -233,6 +237,9 @@
     <ClInclude Include="atomic.cuh" />
     <ClInclude Include="dirent.h" />
     <ClInclude Include="template.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="internship\optimization.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
