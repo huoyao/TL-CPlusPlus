@@ -163,6 +163,9 @@
     <ClCompile Include="game_tangle.cpp">
       <Filter>internship</Filter>
     </ClCompile>
+    <ClCompile Include="test_printf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="device class member.cu">

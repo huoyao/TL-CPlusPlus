@@ -4,18 +4,20 @@
 #include "device_launch_parameters.h"
 #include <math.h>
 
-__global__ void kernel_A( float *g_data)
+__global__ void kernel_A(float *g_data)
 {
   int idx = blockDim.x*blockIdx.x + threadIdx.x;
+  //将乘法操作替换为位操作，提高效率
+  idx <<= 1;
+  //采用一个线程处理相邻的两个奇偶数据，尽量减少判断语句的执行，也可以使每个线程做尽可能多的事情
+  float value0 = g_data[idx];
+  float value1 = g_data[idx + 1];
 
-    idx <<= 1;
-    float value = g_data[idx];
-    float value0 = g_data[idx + 1];
-    value += sqrtf( logf(value) + 1.f );
-    value0 += sqrtf( cosf(value) + 1.f );
+  value0 += sqrtf(cosf(value0) + 1.f);
+  value1 += sqrtf(logf(value1) + 1.f);
 
-    g_data[idx] = value;
-    g_data[idx + 1] = value0;
+  g_data[idx] = value0;
+  g_data[idx + 1] = value1;
 }
 
 float timing_experiment( void (*kernel)( float*), float *d_data, int dimx, int dimy, int nreps, int blockx, int blocky )
@@ -25,17 +27,16 @@ float timing_experiment( void (*kernel)( float*), float *d_data, int dimx, int d
 	cudaEventCreate( &start );
 	cudaEventCreate( &stop  );
 
-  //调换blocky ,blockx，考虑数据的读取对齐和局部性原理
-	//dim3 block(  blocky ,blockx);
-	//dim3 grid( dimx/block.x, dimy/block.y );
-  int block = 128;
-  int grid = dimx*dimy / (2*block);
+  //调整block和grid大小和布局，考虑数据的读取对齐和局部性原理。而且，数据d_data是一维数据，采用一维的block和grid效果更好
+  int block = 512;
+  int grid = dimx*dimy / (block<<1);
 
 	cudaEventRecord( start, 0 );
 	for(int i=0; i<nreps; i++)	// do not change this loop, it's not part of the algorithm - it's just to average time over several kernel launches
-		kernel<<<grid,block>>>( d_data);  //去掉dimy，减少不必要的参数消耗
+		kernel<<<grid,block>>>( d_data);  //在总线程数固定、已知的情况下，去掉dimy,dimx，减少不必要的launch参数消耗
 	cudaEventRecord( stop, 0 );
 	cudaThreadSynchronize();
+  //cudaEventSynchronize(stop);
 	cudaEventElapsedTime( &elapsed_time_ms, start, stop );
 	elapsed_time_ms /= nreps;
 
