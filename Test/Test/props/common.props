@@ -2,8 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <CUDA65_SAMPLES>D:\cuda7\samples\common</CUDA65_SAMPLES>
-    <CUDATOOLKIT>D:\cuda7\toolkit</CUDATOOLKIT>
+    <CUDA65_SAMPLES>D:\cuda\samples\common</CUDA65_SAMPLES>
+    <CUDATOOLKIT>D:\cuda\toolkit</CUDATOOLKIT>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(CUDATOOLKIT)\include;$(CUDA65_SAMPLES)\inc;$(IncludePath)</IncludePath>
