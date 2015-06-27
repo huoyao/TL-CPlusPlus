@@ -1,0 +1,81 @@
+//Given a binary tree, return the postorder traversal of its nodes' values.
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+
+void solve(TreeNode* root) {
+    if(!root) return ;
+    if(root->left) solve(root->left);
+    if(root->right) solve(root->right);
+    printf("%d",root->val);
+}
+
+
+
+//Find the contiguous subarray within an array (containing at least one number) 
+//which has the largest sum. For example, given the array [?3,1,?3,5,?2,2,1,?5,4],
+//the contiguous subarray [5,?2,2,1] has the largest sum = 6.
+class Solution {
+public:
+    int solve(vector<int>& nums) {
+        
+       
+       
+        
+    }
+};
+
+
+
+//Given a linked list, determine if it has a cycle in it.
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+    
+    
+        
+    }
+};
+
+
+//Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water //and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid //are all surrounded by water.
+/*
+  11000
+  11000
+  00100
+  00011
+  The Anwser is 3
+*/
+class Solution {
+public:
+    int solve(vector<vector<char>>& grid) {
+        
+    }
+};
+
+
+
+//Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the //area of largest rectangle in the histogram.
+//Given height = [2,1,5,6,2,3],
+//return 10.
+class Solution {
+public:
+    int solve(vector<int>& height) {
+        
+    }
+};

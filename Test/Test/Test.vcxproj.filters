@@ -163,7 +163,7 @@
     <ClCompile Include="game_tangle.cpp">
       <Filter>internship</Filter>
     </ClCompile>
-    <ClCompile Include="test_printf.cpp">
+    <ClCompile Include="test_printf_sizeof.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
