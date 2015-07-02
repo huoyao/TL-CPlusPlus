@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <CUDA_SAMPLES_DIR>D:\cuda7\samples\common</CUDA_SAMPLES_DIR>
+    <CUDA_TOOLKIT_DIR>D:\cuda7\toolkit</CUDA_TOOLKIT_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(CUDA_TOOLKIT_DIR)\include;$(CUDA_SAMPLES_DIR)\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(CUDA_TOOLKIT_DIR)\lib\x64;$(CUDA_SAMPLES_DIR)\lib\x64;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <CudaToolkitCustomDir>$(CUDA_TOOLKIT_DIR)\bin</CudaToolkitCustomDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <CudaCompile>
+      <Include>$(CUDA_TOOLKIT_DIR)\include;$(CUDA_SAMPLES_DIR)\inc;%(Include)</Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_20,sm_20</CodeGeneration>
+    </CudaCompile>
+    <Link>
+      <AdditionalDependencies>cudart.lib;cusparse.lib;cublas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CUDA_TOOLKIT_DIR)\lib\x64;$(CUDA_SAMPLES_DIR)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <CudaLink>
+      <AdditionalLibraryDirectories>$(CUDA_TOOLKIT_DIR)\lib\x64;$(CUDA_SAMPLES_DIR)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="CUDA_SAMPLES_DIR">
+      <Value>$(CUDA_SAMPLES_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CUDA_TOOLKIT_DIR">
+      <Value>$(CUDA_TOOLKIT_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

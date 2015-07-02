@@ -29,3 +29,7 @@
 *.exe
 *.out
 *.app
+/Test/Performance.psess
+/Test/Test.psess
+/Test/Test150630(1).vsp
+/Test/Test150630.vsp

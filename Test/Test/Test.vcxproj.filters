@@ -1,21 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="headers">
-      <UniqueIdentifier>{ae10b4bc-5c40-4739-8e3e-f837754f98b8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cuda">
       <UniqueIdentifier>{5579b919-124b-4f41-ad47-e55c9cb5fabb}</UniqueIdentifier>
     </Filter>
     <Filter Include="internship">
       <UniqueIdentifier>{140bb820-863a-45fe-b7d1-282a27ad4d06}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="cuda\headers">
-      <UniqueIdentifier>{9a817a7b-4443-4c53-bb44-9f1ff4dd2c0b}</UniqueIdentifier>
     </Filter>
     <Filter Include="internship\GCJ2015">
       <UniqueIdentifier>{3df1aac2-92b7-4b24-a0b5-84838208eba7}</UniqueIdentifier>
@@ -31,6 +21,10 @@
     </Filter>
     <Filter Include="internship\netease">
       <UniqueIdentifier>{fe1387a5-ea7d-44e7-bfe0-fd36e942f052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cplusplus">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -100,77 +94,56 @@
     <ClCompile Include="internship\indeed_2.cpp">
       <Filter>internship</Filter>
     </ClCompile>
-    <ClCompile Include="algorithm\average 3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="algorithm\combination numbers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="algorithm\fab mod.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="algorithm\find position.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="algorithm\sort3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="cplusplus\friend class.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\lambda.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="cplusplus\operator.cpp">
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\polymorphic.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\queue.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\shared_ptr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\singleton.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\template.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\template_test.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
     <ClCompile Include="cplusplus\test_printf_sizeof.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cplusplus</Filter>
     </ClCompile>
-    <ClCompile Include="internship\0-1_2_19.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithm\average 3.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="internship\360_1.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithm\combination numbers.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="internship\ali3.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithm\fab mod.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="internship\bd2.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithm\find position.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="internship\freeList.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithm\sort3.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="internship\freelist_.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cplusplus\array vs vector.cpp">
+      <Filter>cplusplus</Filter>
     </ClCompile>
-    <ClCompile Include="internship\game_tangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="internship\Travel Information Center_tangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="internship\tx0.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="operator.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="find 3 num appeared once.cpp">
+      <Filter>algorithm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -180,21 +153,27 @@
     <CudaCompile Include="internship\cuda_prog_1.cu">
       <Filter>internship</Filter>
     </CudaCompile>
-    <CudaCompile Include="cuda\array parameter.cu" />
-    <CudaCompile Include="cuda\cuda_prop_0.cu" />
-    <CudaCompile Include="cuda\device class member.cu" />
-    <CudaCompile Include="cuda\two-dimensional array.cu" />
+    <CudaCompile Include="cuda\array parameter.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda\cuda_prop_0.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda\device class member.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda\two-dimensional array.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cplusplus\template.h" />
+    <ClInclude Include="cplusplus\template.h">
+      <Filter>cplusplus</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="cuda\atomic.cuh" />
-    <None Include="internship\deepglint_problem.txt" />
-    <None Include="internship\instructions.txt" />
-    <None Include="internship\optimization.txt" />
-    <None Include="internship\test case for Game.txt" />
-    <None Include="internship\test case for Travel Information Center.txt" />
-    <None Include="internship\wap input.txt" />
+    <None Include="cuda\atomic.cuh">
+      <Filter>cuda</Filter>
+    </None>
   </ItemGroup>
 </Project>
