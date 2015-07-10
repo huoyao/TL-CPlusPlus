@@ -145,6 +145,9 @@
     <ClCompile Include="find 3 num appeared once.cpp">
       <Filter>algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="cplusplus\string.cpp">
+      <Filter>cplusplus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">
@@ -163,6 +166,9 @@
       <Filter>cuda</Filter>
     </CudaCompile>
     <CudaCompile Include="cuda\two-dimensional array.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda\const reference test.cu">
       <Filter>cuda</Filter>
     </CudaCompile>
   </ItemGroup>
