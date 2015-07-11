@@ -148,6 +148,9 @@
     <ClCompile Include="cplusplus\string.cpp">
       <Filter>cplusplus</Filter>
     </ClCompile>
+    <ClCompile Include="cplusplus\destructor function.cpp">
+      <Filter>cplusplus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">
