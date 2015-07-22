@@ -160,6 +160,9 @@
     <ClCompile Include="internship\ms\ms2015_1.cpp">
       <Filter>internship\ms</Filter>
     </ClCompile>
+    <ClCompile Include="algorithm\money allocation.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">
