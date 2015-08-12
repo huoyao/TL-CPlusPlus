@@ -175,6 +175,9 @@
     <ClCompile Include="recruitment\red_envelop.cpp">
       <Filter>internship</Filter>
     </ClCompile>
+    <ClCompile Include="recruitment\Seven-segment Display.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">
