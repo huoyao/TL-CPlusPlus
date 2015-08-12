@@ -172,6 +172,9 @@
     <ClCompile Include="cplusplus\const_static.cpp">
       <Filter>cplusplus</Filter>
     </ClCompile>
+    <ClCompile Include="recruitment\red_envelop.cpp">
+      <Filter>internship</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">
