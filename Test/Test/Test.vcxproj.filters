@@ -151,9 +151,6 @@
     <ClCompile Include="cplusplus\destructor function.cpp">
       <Filter>cplusplus</Filter>
     </ClCompile>
-    <ClCompile Include="recruitment\ms_string reorder.cpp">
-      <Filter>cplusplus</Filter>
-    </ClCompile>
     <ClCompile Include="internship\ms\ms2015_2.cpp">
       <Filter>internship\ms</Filter>
     </ClCompile>
@@ -162,6 +159,18 @@
     </ClCompile>
     <ClCompile Include="algorithm\money allocation.cpp">
       <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="cplusplus\vector.cpp">
+      <Filter>cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="cplusplus\reference.cpp">
+      <Filter>cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="recruitment\ms_string reorder.cpp">
+      <Filter>internship\ms</Filter>
+    </ClCompile>
+    <ClCompile Include="cplusplus\const_static.cpp">
+      <Filter>cplusplus</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
