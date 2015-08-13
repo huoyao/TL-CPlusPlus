@@ -7,21 +7,25 @@
 #include <cmath>
 #include <cstdlib>
 #include <string>
+#include <bitset>
+#include <iomanip>
+#include <fstream>
 using namespace std;
 
-unsigned long a[] =
+unsigned char a[] =
 {
   0176, 0060, 0155, 0171, 0063, 0133,
   0137, 0160, 0177, 0173
 };
 
-unsigned long b[100];
+unsigned char b[100];
 
 int main()
 {
   int num;
   cin >> num;
   int idx = 1;
+  ofstream ofstr("out.txt");
   while(num--)
   {
     int n;
@@ -32,41 +36,39 @@ int main()
       cin >> c;
       b[i] = strtoul(c.c_str(), NULL, 2);
     }
-    cout << "Case #" << idx++ << ":";
-    bool prt = false;
+    ofstr << "Case #" << idx++ << ": ";
+    int cnt = 0;
+    int record;
+    unsigned long tmp_record;
     for(int i = 0; i < 10; ++i)
     {
-      int t = i;
-      cout <<endl<< t << ">>>";
-      unsigned long tmp = a[t] ^ b[0];
+      int t=i;
+      unsigned long tmp = 0;
       int j =0;
       for(; j < n; ++j)
       {
         if(t == -1) t = 9;
-        if(tmp == 0)
-        {
-          tmp = a[t] ^ b[j];
+        tmp|= a[t] ^ b[j];
           --t;
-          cout << "(" << a[t] << " " << b[j] << " " << tmp << ") ";
-          continue;
-        }
-        unsigned long tmpp = a[t] ^ b[j];
-        cout << "(" << a[t] << " " << b[j] << " " << tmpp << ") ";
-        --t;
-        if(tmpp == 0) continue;
-        if(tmp != tmpp) { cout << endl;break; }
       }
-      --t;
-      if(t == -1) t = 9;
-      if(j == n)
+      j = 0;
+      if(tmp != 0)
       {
-        cout << a[t] << endl;
-        prt = true;
-        break;
+        for(;j < n;++j)
+          if(tmp&b[j]) break;
+      }
+      if(t == -1) t = 9;
+      if(tmp==0 || j == n)
+      {
+        record = t;
+        tmp_record = tmp;
+        ++cnt;
       }
     }
-    if(!prt) cout << "ERROR!" << endl;
+    if(cnt != 1) ofstr << "ERROR!" << endl;
+    else ofstr << bitset<7>(a[record] & (~tmp_record)) << endl;
   }
+  ofstr.close();
   system("pause");
   return 0;
 }
