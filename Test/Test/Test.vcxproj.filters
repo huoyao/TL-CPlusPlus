@@ -26,6 +26,9 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="recruitment">
+      <UniqueIdentifier>{d50f16fe-ac38-47d6-ae32-ed200977573a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="QR_problem_A.cpp">
@@ -177,6 +180,9 @@
     </ClCompile>
     <ClCompile Include="recruitment\Seven-segment Display.cpp">
       <Filter>internship</Filter>
+    </ClCompile>
+    <ClCompile Include="recruitment\gcj_r0_1_Bad_Horse.cpp">
+      <Filter>recruitment</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
