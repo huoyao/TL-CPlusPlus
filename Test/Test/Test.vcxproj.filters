@@ -184,6 +184,9 @@
     <ClCompile Include="recruitment\gcj_r0_1_Bad_Horse.cpp">
       <Filter>recruitment</Filter>
     </ClCompile>
+    <ClCompile Include="cplusplus\array.cpp">
+      <Filter>cplusplus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="cuda\thrust_test.cu">

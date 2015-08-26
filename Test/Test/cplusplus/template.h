@@ -1,5 +1,7 @@
 #ifndef __TEMPLATE_H__
 #define __TEMPLATE_H__
+#include <algorithm>
+
 //class template
 template<typename T>
 class TemplateClass
@@ -32,6 +34,22 @@ T addElem(const T &t1, const T&t2)
 {
   return t1 + t2;
 }
+
+// clamp some variables in a range
+template<typename T>
+void clamp(const T& r1, const T& r2, T& t)
+{
+  t = max(t, r1);
+  t = min(t, r2);
+}
+
+template<typename T, typename... args>
+void clamp(const T &r1, const T&r2, T &t, args &...arg)
+{
+  clamp(r1, r2, t);
+  clamp(r1,r2,arg...);
+}
+
 
 #endif
 

@@ -2,6 +2,14 @@
 #include <iostream>
 using namespace std;
 
+void testClamp()
+{
+  double a = 2, b = 3, c = 4;
+  clamp(0., 1., a, b);
+  clamp(0., 1., a, b, c);
+}
+
+
 int main()
 {
   //for template class 
@@ -9,7 +17,7 @@ int main()
   TemplateClass<double> tmp2(1.1);
   cout << "tmp2:" << tmp2.getData() << endl;
   tmp->setData(1);
-  cout << tmp->getData() << endl;
+  //cout << tmp->getData() << endl;
 
   //for template function  test
   int a = 1, b = 2;
@@ -19,5 +27,7 @@ int main()
   {
     cout << i << " " << endl;
   }
+  testClamp();
+  
   return 0;
 }
