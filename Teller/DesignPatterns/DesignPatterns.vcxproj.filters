@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Strategy">
+      <UniqueIdentifier>{ad0cb7a5-fcb2-4559-952a-4a0cf58fcf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Observer">
+      <UniqueIdentifier>{77ea96b1-ff71-4e81-8229-f30443cbd7bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Strategy\Duck.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\FlyWithoutWings.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\FlyWithWings.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\QuackLoud.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\QuackSmall.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\RedHeadDuck.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\ToyDuck.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\Strategy.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Displayment.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Observer.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\PressureDisplay.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Subject.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\TemperatureHumidityDisplay.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\WeatherData.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Strategy\Duck.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyBehaviour.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyWithoutWings.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyWithWings.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\QuackBehaviour.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\QuackLoud.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\QuackSmall.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\RedHeadDuck.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\ToyDuck.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Displayment.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\PressureDisplay.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Subject.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\TemperatureHumidityDisplay.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\WeatherData.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
