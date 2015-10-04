@@ -8,18 +8,19 @@
 #if !defined(EA_C4F8869A_6F5C_4011_B790_58770C6A2CB3__INCLUDED_)
 #define EA_C4F8869A_6F5C_4011_B790_58770C6A2CB3__INCLUDED_
 
-namespace Observer
+
+class Subject;
+
+class Observer
 {
-	class Observer
-	{
 
-	public:
-		Observer();
-		virtual ~Observer();
+public:
+  virtual ~Observer();
 
-		virtual void Update(Subject * changed_subject) =0;
+  virtual void Update(Subject * changed_subject) = 0;
+protected:
+  Observer();
+};
 
-	};
 
-}
 #endif // !defined(EA_C4F8869A_6F5C_4011_B790_58770C6A2CB3__INCLUDED_)

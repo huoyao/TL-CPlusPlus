@@ -6,29 +6,27 @@
 ///////////////////////////////////////////////////////////
 
 #include "TemperatureHumidityDisplay.h"
+#include <iostream>
 
-using Observer::TemperatureHumidityDisplay;
-
-
-TemperatureHumidityDisplay::TemperatureHumidityDisplay(){
-
+TemperatureHumidityDisplay::TemperatureHumidityDisplay(Subject * changed_subject){
+  m_WeatherData = dynamic_cast<WeatherData *> (changed_subject);
+  m_WeatherData->Attach(this);
 }
 
 
 
 TemperatureHumidityDisplay::~TemperatureHumidityDisplay(){
-
+  m_WeatherData->Dettach(this);
 }
 
-
-
-
-
 void TemperatureHumidityDisplay::Display(){
-
+  float tmp = m_WeatherData->GetTemperatur();
+  float humidity = m_WeatherData->GetHumidity();
+  std::cout << "temperature:" << tmp << " humidity:" << humidity << std::endl;
 }
 
 
 void TemperatureHumidityDisplay::Update(Subject * changed_subject){
-
+  m_WeatherData = dynamic_cast<WeatherData *> (changed_subject);
+  Display();
 }

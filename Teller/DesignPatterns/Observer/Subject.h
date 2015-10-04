@@ -9,24 +9,21 @@
 #define EA_07149145_C490_4298_B001_4E2A934C7D8E__INCLUDED_
 
 #include "Observer.h"
-#include "Displayment.h"
+#include <list>
 
-namespace Observer
+class Subject
 {
-	class Subject
-	{
+public:
+  virtual ~Subject();
 
-	public:
-		Subject();
-		virtual ~Subject();
-		Observer::Observer *m_Observer;
-		Observer::Displayment *m_Displayment;
+  virtual void Attach(Observer * observer);
+  virtual void Dettach(Observer * observer);
+  virtual void Notisfy();
+protected:
+  Subject();
+private:
+  std::list<Observer *> observers_;
+};
 
-		virtual void Attach(Observer * observer);
-		virtual void Dettach(Observer * observer);
-		virtual void Notisfy();
 
-	};
-
-}
 #endif // !defined(EA_07149145_C490_4298_B001_4E2A934C7D8E__INCLUDED_)

@@ -7,7 +7,6 @@
 
 #include "Displayment.h"
 
-using Observer::Displayment;
 
 
 Displayment::Displayment(){

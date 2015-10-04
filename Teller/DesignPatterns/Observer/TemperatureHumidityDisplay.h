@@ -12,23 +12,19 @@
 #include "Observer.h"
 #include "Displayment.h"
 
-namespace Observer
+
+class TemperatureHumidityDisplay: public Observer, public Displayment
 {
-	class TemperatureHumidityDisplay : public Observer::Observer, public Observer::Displayment
-	{
+public:
+  explicit TemperatureHumidityDisplay(Subject * changed_subject);
+  virtual ~TemperatureHumidityDisplay();
 
-	public:
-		TemperatureHumidityDisplay();
-		virtual ~TemperatureHumidityDisplay();
-		Observer::WeatherData *m_WeatherData;
+  virtual void Display() override;
+  virtual void Update(Subject * changed_subject) override;
 
-		virtual void Display();
-		virtual void Update(Subject * changed_subject);
+private:
+  WeatherData *m_WeatherData;
+};
 
-	private:
-		Subject * subject;
 
-	};
-
-}
 #endif // !defined(EA_95B4FA6D_55A8_4d89_9DBB_10AE8A68D9C0__INCLUDED_)

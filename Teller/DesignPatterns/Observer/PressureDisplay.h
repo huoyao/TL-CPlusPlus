@@ -12,23 +12,21 @@
 #include "Observer.h"
 #include "Displayment.h"
 
-namespace Observer
+
+class PressureDisplay: public Observer, public Displayment
 {
-	class PressureDisplay : public Observer::Observer, public Observer::Displayment
-	{
 
-	public:
-		PressureDisplay();
-		virtual ~PressureDisplay();
-		Observer::WeatherData *m_WeatherData;
+public:
+  explicit PressureDisplay(Subject * changed_subject);
+  virtual ~PressureDisplay();
 
-		virtual void Display();
-		virtual void Update(Subject * changed_subject);
+  virtual void Display() override;
+  virtual void Update(Subject * changed_subject) override;
 
-	private:
-		Subject * subject;
+private:
+  WeatherData *m_WeatherData;
 
-	};
+};
 
-}
+
 #endif // !defined(EA_17BDA476_FF1C_4c97_B315_DF044EFA9BB5__INCLUDED_)

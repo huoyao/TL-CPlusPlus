@@ -7,15 +7,14 @@
 
 #include "Observer.h"
 
-using Observer::Observer;
-
-
-Observer::Observer(){
+Observer::Observer() {
 
 }
 
 
 
-Observer::~Observer(){
+Observer::~Observer() {
 
 }
+
+

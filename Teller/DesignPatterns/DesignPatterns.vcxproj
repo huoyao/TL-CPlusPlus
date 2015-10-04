@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Observer\Displayment.cpp" />
     <ClCompile Include="Observer\Observer.cpp" />
+    <ClCompile Include="Observer\ObserverRun.cpp" />
     <ClCompile Include="Observer\PressureDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
     <ClCompile Include="Observer\TemperatureHumidityDisplay.cpp" />

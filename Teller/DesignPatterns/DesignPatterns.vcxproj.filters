@@ -63,6 +63,9 @@
     <ClCompile Include="Observer\WeatherData.cpp">
       <Filter>源文件\Observer</Filter>
     </ClCompile>
+    <ClCompile Include="Observer\ObserverRun.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Strategy\Duck.h">

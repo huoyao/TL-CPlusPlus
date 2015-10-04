@@ -7,56 +7,31 @@
 
 #include "WeatherData.h"
 
-using Observer::WeatherData;
-
-
 WeatherData::WeatherData(){
 
 }
-
-
 
 WeatherData::~WeatherData(){
 
 }
 
-
-
-
-
-void WeatherData::Attach(Observer * observer){
-
-}
-
-
-void WeatherData::Dettach(Observer * observer){
-
-}
-
-
 float WeatherData::GetHumidity(){
-
-	return 0;
+	return humidity_;
 }
 
 
 float WeatherData::GetPressure(){
-
-	return 0;
+	return pressure_;
 }
 
 
 float WeatherData::GetTemperatur(){
-
-	return 0;
+	return temperature_;
 }
 
-
-void WeatherData::Notisfy(){
-
-}
-
-
-void WeatherData::SetStatus(float temperature_, float humidity_, float pressure_){
-
+void WeatherData::SetStatus(float temperature, float humidity, float pressure){
+  temperature_ = temperature;
+  humidity_ = humidity;
+  pressure_ = pressure;
+  Notisfy();
 }

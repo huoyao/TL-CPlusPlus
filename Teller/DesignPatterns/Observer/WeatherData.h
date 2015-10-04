@@ -10,30 +10,23 @@
 
 #include "Subject.h"
 
-namespace Observer
+
+class WeatherData: public Subject
 {
-	class WeatherData : public Observer::Subject
-	{
+public:
+  WeatherData();
+  virtual ~WeatherData();
 
-	public:
-		WeatherData();
-		virtual ~WeatherData();
+  float GetHumidity();
+  float GetPressure();
+  float GetTemperatur();
+  void SetStatus(float temperature_, float humidity_, float pressure_);
 
-		virtual void Attach(Observer * observer);
-		virtual void Dettach(Observer * observer);
-		float GetHumidity();
-		float GetPressure();
-		float GetTemperatur();
-		virtual void Notisfy();
-		void SetStatus(float temperature_, float humidity_, float pressure_);
+private:
+  float humidity_;
+  float pressure_;
+  float temperature_;
+};
 
-	private:
-		float humidity_;
-		List<Observer *> observers_;
-		float pressure_;
-		float temperature_;
 
-	};
-
-}
 #endif // !defined(EA_EF0E9A27_A800_42c4_8ED9_6CB3929B5CA9__INCLUDED_)
