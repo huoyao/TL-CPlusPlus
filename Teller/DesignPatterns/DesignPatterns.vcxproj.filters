@@ -19,6 +19,12 @@
     <Filter Include="源文件\Observer">
       <UniqueIdentifier>{77ea96b1-ff71-4e81-8229-f30443cbd7bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Decorator">
+      <UniqueIdentifier>{5b21a5f7-5a7b-4061-9817-16ebcf474df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SimpleFactory">
+      <UniqueIdentifier>{db7bb04a-3288-454f-995e-dde0770a68b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Strategy\Duck.cpp">
@@ -66,6 +72,45 @@
     <ClCompile Include="Observer\ObserverRun.cpp">
       <Filter>源文件\Observer</Filter>
     </ClCompile>
+    <ClCompile Include="Decorator\Beverage.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\CodimentDecorator.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\DarkRoast.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\HouseBlend.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Milk.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Mocha.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\DecoratorRun.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\CheesePizza.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\Pizza.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\PizzaStore.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\SimpleFactoryStore.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\VeggiePizza.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactoryRun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Strategy\Duck.h">
@@ -112,6 +157,39 @@
     </ClInclude>
     <ClInclude Include="Observer\WeatherData.h">
       <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Beverage.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\CodimentDecorator.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\DarkRoast.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\HouseBlend.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Milk.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Mocha.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\CheesePizza.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\Pizza.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\PizzaStore.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\SimpleFactoryStore.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\VeggiePizza.h">
+      <Filter>源文件\SimpleFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

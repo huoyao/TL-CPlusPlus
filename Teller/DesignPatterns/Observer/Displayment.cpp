@@ -7,13 +7,9 @@
 
 #include "Displayment.h"
 
-
-
 Displayment::Displayment(){
 
 }
-
-
 
 Displayment::~Displayment(){
 

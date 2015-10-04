@@ -26,7 +26,7 @@ public:
   void SetFlyBehaviour(FlyBehaviour *);
   void SetQuackBehaviour(QuackBehaviour *);
   virtual void Display();
-
+protected:
   FlyBehaviour *fly_behaviour_;
   QuackBehaviour *quack_behaviour_;
 };

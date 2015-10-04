@@ -19,6 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Decorator\Beverage.cpp" />
+    <ClCompile Include="Decorator\CodimentDecorator.cpp" />
+    <ClCompile Include="Decorator\DarkRoast.cpp" />
+    <ClCompile Include="Decorator\DecoratorRun.cpp" />
+    <ClCompile Include="Decorator\HouseBlend.cpp" />
+    <ClCompile Include="Decorator\Milk.cpp" />
+    <ClCompile Include="Decorator\Mocha.cpp" />
     <ClCompile Include="Observer\Displayment.cpp" />
     <ClCompile Include="Observer\Observer.cpp" />
     <ClCompile Include="Observer\ObserverRun.cpp" />
@@ -26,6 +33,12 @@
     <ClCompile Include="Observer\Subject.cpp" />
     <ClCompile Include="Observer\TemperatureHumidityDisplay.cpp" />
     <ClCompile Include="Observer\WeatherData.cpp" />
+    <ClCompile Include="SimpleFactoryRun.cpp" />
+    <ClCompile Include="SimpleFactory\CheesePizza.cpp" />
+    <ClCompile Include="SimpleFactory\Pizza.cpp" />
+    <ClCompile Include="SimpleFactory\PizzaStore.cpp" />
+    <ClCompile Include="SimpleFactory\SimpleFactoryStore.cpp" />
+    <ClCompile Include="SimpleFactory\VeggiePizza.cpp" />
     <ClCompile Include="Strategy\Duck.cpp" />
     <ClCompile Include="Strategy\FlyWithoutWings.cpp" />
     <ClCompile Include="Strategy\FlyWithWings.cpp" />
@@ -36,12 +49,23 @@
     <ClCompile Include="Strategy\ToyDuck.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Decorator\Beverage.h" />
+    <ClInclude Include="Decorator\CodimentDecorator.h" />
+    <ClInclude Include="Decorator\DarkRoast.h" />
+    <ClInclude Include="Decorator\HouseBlend.h" />
+    <ClInclude Include="Decorator\Milk.h" />
+    <ClInclude Include="Decorator\Mocha.h" />
     <ClInclude Include="Observer\Displayment.h" />
     <ClInclude Include="Observer\Observer.h" />
     <ClInclude Include="Observer\PressureDisplay.h" />
     <ClInclude Include="Observer\Subject.h" />
     <ClInclude Include="Observer\TemperatureHumidityDisplay.h" />
     <ClInclude Include="Observer\WeatherData.h" />
+    <ClInclude Include="SimpleFactory\CheesePizza.h" />
+    <ClInclude Include="SimpleFactory\Pizza.h" />
+    <ClInclude Include="SimpleFactory\PizzaStore.h" />
+    <ClInclude Include="SimpleFactory\SimpleFactoryStore.h" />
+    <ClInclude Include="SimpleFactory\VeggiePizza.h" />
     <ClInclude Include="Strategy\Duck.h" />
     <ClInclude Include="Strategy\FlyBehaviour.h" />
     <ClInclude Include="Strategy\FlyWithoutWings.h" />
