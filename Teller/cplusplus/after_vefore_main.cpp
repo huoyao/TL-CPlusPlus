@@ -53,7 +53,7 @@ void checkMemoryLeak()
 }
 
 //for gcc compile
-//#ifdef linux
+#ifdef linux
 __attribute__((constructor))
 void function_before_main()
 {
@@ -65,12 +65,12 @@ void function_after_main()
 {
   printf("%s called \n", __FUNCTION__);
 }
-//#endif
+#endif
 //end for gcc compile
 
 int main()
 {
-  atexit(checkMemoryLeak);
+  
   static bool first = true;
   if (first)
   {
@@ -83,6 +83,7 @@ int main()
   //for memory check
   int *p = new int;
 
+  atexit(checkMemoryLeak);
   system("pause");
   return 0;
 }

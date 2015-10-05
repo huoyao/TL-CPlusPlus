@@ -12,20 +12,23 @@
 #include "QuackLoud.h"
 
 
-class RedHeadDuck:public Duck
-{
+class RedHeadDuck:public Duck {
 public:
-  RedHeadDuck()
-  {
+  RedHeadDuck() {
     fly_behaviour_ = new FlyWithWings();
     quack_behaviour_ = new QuackLoud();
   };
 
-  ~RedHeadDuck()
-  {
+  ~RedHeadDuck() {
+    if(!fly_behaviour_changed) {
+      delete fly_behaviour_;
+    }
+    if(!quack_behaviour_changed) {
+      delete quack_behaviour_;
+    }
   };
   void Display() override;
-  
+
 };
 
 #endif

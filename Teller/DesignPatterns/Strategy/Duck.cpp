@@ -25,12 +25,16 @@ void Duck::PerformanceQuack()
 
 void Duck::SetFlyBehaviour(FlyBehaviour* fly)
 {
+  if(fly_behaviour_) delete fly_behaviour_;
   fly_behaviour_ = fly;
+  fly_behaviour_changed=true;
 }
 
 void Duck::SetQuackBehaviour(QuackBehaviour* quack)
 {
+  if(quack_behaviour_) delete quack_behaviour_;
   quack_behaviour_ = quack;
+  quack_behaviour_changed = true;
 }
 
 

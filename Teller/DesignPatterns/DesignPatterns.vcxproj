@@ -55,6 +55,7 @@
     <ClInclude Include="Decorator\HouseBlend.h" />
     <ClInclude Include="Decorator\Milk.h" />
     <ClInclude Include="Decorator\Mocha.h" />
+    <ClInclude Include="MemoryLeakChecker.h" />
     <ClInclude Include="Observer\Displayment.h" />
     <ClInclude Include="Observer\Observer.h" />
     <ClInclude Include="Observer\PressureDisplay.h" />

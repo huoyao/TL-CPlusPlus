@@ -191,5 +191,8 @@
     <ClInclude Include="SimpleFactory\VeggiePizza.h">
       <Filter>源文件\SimpleFactory</Filter>
     </ClInclude>
+    <ClInclude Include="MemoryLeakChecker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

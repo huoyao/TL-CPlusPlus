@@ -35,4 +35,5 @@ void PizzaStore::orderPizza(int type) {
   pizza->prepare();
   pizza->bake();
   pizza->box();
+  delete pizza;
 }

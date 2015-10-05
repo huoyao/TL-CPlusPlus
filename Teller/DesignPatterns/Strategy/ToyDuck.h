@@ -12,20 +12,23 @@
 #include "QuackSmall.h"
 
 
-class ToyDuck:public Duck
-{
+class ToyDuck:public Duck {
 public:
-  ToyDuck()
-  {
+  ToyDuck() {
     fly_behaviour_ = new FlyWithoutWings();
     quack_behaviour_ = new QuackSmall();
   };
 
-  ~ToyDuck()
-  {
+  ~ToyDuck() {
+    if(!fly_behaviour_changed) {
+      delete fly_behaviour_;
+    }
+    if(!quack_behaviour_changed) {
+      delete quack_behaviour_;
+    }
   };
   void Display() override;
-  
+
 };
 
 #endif

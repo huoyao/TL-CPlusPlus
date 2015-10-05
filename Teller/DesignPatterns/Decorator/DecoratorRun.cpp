@@ -12,10 +12,12 @@
 #include "Milk.h"
 #include "Mocha.h"
 #include "HouseBlend.h"
+#include "../MemoryLeakChecker.h"
 using namespace std;
 
 int main()
 {
+  //has memory leak
   Decorator::Beverage *beverage0 = new Decorator::Milk(new Decorator::Milk(new Decorator::Mocha(new Decorator::DarkRoast())));
   cout << "name:" << beverage0->getDescription() << ",cost:" << beverage0->cost() << endl;
   delete beverage0;
@@ -28,6 +30,7 @@ int main()
   delete beverage2;
   delete beverage3;
 
+  atexit(checkMemoryLeak);
   system("pause");
   return 0;
 }

@@ -9,6 +9,7 @@
 #include <iostream>
 #include "SimpleFactoryStore.h"
 #include "PizzaStore.h"
+#include "../MemoryLeakChecker.h"
 using namespace std;
 
 int main()
@@ -22,6 +23,8 @@ int main()
   pizza_store->orderPizza(3);
   delete simple_store;
   delete pizza_store;
+
+  atexit(checkMemoryLeak);
   system("pause");
   return 0;
 }

@@ -8,10 +8,10 @@
 
 #include <iostream>
 #include "Observer.h"
-#include "Subject.h"
 #include "WeatherData.h"
 #include "TemperatureHumidityDisplay.h"
 #include "PressureDisplay.h"
+#include "../MemoryLeakChecker.h"
 using namespace std;
 
 int main()
@@ -21,6 +21,11 @@ int main()
   Observer *press = new PressureDisplay(subject);
   subject->SetStatus(1.0, 1.0, 10);
   subject->SetStatus(2.0, 2.0, 20);
+  delete temp_humidity;
+  delete press;
+  delete subject;
+
+  atexit(checkMemoryLeak);
   system("pause");
   return 0;
 }

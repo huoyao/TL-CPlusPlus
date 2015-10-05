@@ -14,7 +14,7 @@
 class Duck
 {
 public:
-  Duck()
+  Duck():fly_behaviour_changed(false),quack_behaviour_changed(false)
   {
   };
 
@@ -29,6 +29,8 @@ public:
 protected:
   FlyBehaviour *fly_behaviour_;
   QuackBehaviour *quack_behaviour_;
+  bool fly_behaviour_changed;
+  bool quack_behaviour_changed;
 };
 
 #endif

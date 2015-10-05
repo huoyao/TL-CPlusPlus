@@ -20,11 +20,17 @@ void Subject::Attach(Observer * observer){
 }
 
 void Subject::Dettach(Observer * observer){
+  auto it_tobedelete=observers_.end();
   for(auto it = observers_.begin();it != observers_.end();++it){
     if (*it==observer)
     {
-      observers_.erase(it);
+      it_tobedelete = it;
+      break;
     }
+  }
+  if (it_tobedelete!=observers_.end())
+  {
+    observers_.erase(it_tobedelete);
   }
 }
 

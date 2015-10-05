@@ -10,6 +10,7 @@
 #include "Duck.h"
 #include "RedHeadDuck.h"
 #include "ToyDuck.h"  
+#include "../MemoryLeakChecker.h"
 using namespace std;
 
 int main()
@@ -21,12 +22,18 @@ int main()
 
   cout << endl;
 
-  red_duck->SetFlyBehaviour(new FlyWithoutWings());
-  red_duck->SetQuackBehaviour(new QuackSmall());
+  FlyBehaviour *new_fly = new FlyWithoutWings();
+  red_duck->SetFlyBehaviour(new_fly);
+  QuackBehaviour *new_quak = new QuackSmall();
+  red_duck->SetQuackBehaviour(new_quak);
   red_duck->Display();
   red_duck->PerformanceFly();
   red_duck->PerformanceQuack();
 
+  delete new_fly;
+  delete new_quak;
+  delete red_duck;
+  atexit(checkMemoryLeak);
   system("pause");
   return 0;
 }
