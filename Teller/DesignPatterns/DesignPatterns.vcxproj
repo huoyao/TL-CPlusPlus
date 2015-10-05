@@ -33,10 +33,10 @@
     <ClCompile Include="Observer\Subject.cpp" />
     <ClCompile Include="Observer\TemperatureHumidityDisplay.cpp" />
     <ClCompile Include="Observer\WeatherData.cpp" />
-    <ClCompile Include="SimpleFactoryRun.cpp" />
     <ClCompile Include="SimpleFactory\CheesePizza.cpp" />
     <ClCompile Include="SimpleFactory\Pizza.cpp" />
     <ClCompile Include="SimpleFactory\PizzaStore.cpp" />
+    <ClCompile Include="SimpleFactory\SimpleFactoryRun.cpp" />
     <ClCompile Include="SimpleFactory\SimpleFactoryStore.cpp" />
     <ClCompile Include="SimpleFactory\VeggiePizza.cpp" />
     <ClCompile Include="Strategy\Duck.cpp" />

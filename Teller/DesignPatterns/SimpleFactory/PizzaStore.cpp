@@ -6,17 +6,18 @@
 ///////////////////////////////////////////////////////////
 
 #include "PizzaStore.h"
+#include <iostream>
 
 using SimpleFactory::PizzaStore;
 
 
-PizzaStore::PizzaStore(){
+PizzaStore::PizzaStore() {
 
 }
 
 
 
-PizzaStore::~PizzaStore(){
+PizzaStore::~PizzaStore() {
 
 }
 
@@ -24,7 +25,14 @@ PizzaStore::~PizzaStore(){
 
 
 
-int PizzaStore::orderPizza(int type){
-
-	return 0;
+void PizzaStore::orderPizza(int type) {
+  Pizza *pizza;
+  pizza = simple_factory_->createPizza(type);
+  if(pizza == nullptr) {
+    std::cout << "no such pizza\n";
+    return;
+  }
+  pizza->prepare();
+  pizza->bake();
+  pizza->box();
 }

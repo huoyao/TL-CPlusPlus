@@ -17,10 +17,15 @@ namespace SimpleFactory
 
 	public:
 		PizzaStore();
-		virtual ~PizzaStore();
-		SimpleFactory::SimpleFactoryStore *m_SimpleFactoryStore;
 
-		int orderPizza(int type);
+	  explicit PizzaStore(SimpleFactoryStore* simple_factory)
+	  {
+      simple_factory_ = simple_factory;
+	  }
+
+	  virtual ~PizzaStore();
+
+		void orderPizza(int type);
 
 	private:
 		SimpleFactoryStore* simple_factory_;

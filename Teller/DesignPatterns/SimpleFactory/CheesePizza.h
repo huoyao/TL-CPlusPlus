@@ -12,16 +12,16 @@
 
 namespace SimpleFactory
 {
-	class CheesePizza : public SimpleFactory::Pizza
+	class CheesePizza : public Pizza
 	{
 
 	public:
 		CheesePizza();
 		virtual ~CheesePizza();
 
-		virtual void bake();
-		virtual void box();
-		virtual void prepare();
+		virtual void bake() override;
+		virtual void box() override;
+		virtual void prepare() override;
 
 	};
 

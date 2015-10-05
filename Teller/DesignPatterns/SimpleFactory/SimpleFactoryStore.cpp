@@ -6,6 +6,8 @@
 ///////////////////////////////////////////////////////////
 
 #include "SimpleFactoryStore.h"
+#include "CheesePizza.h"
+#include "VeggiePizza.h"
 
 using SimpleFactory::SimpleFactoryStore;
 
@@ -14,17 +16,23 @@ SimpleFactoryStore::SimpleFactoryStore(){
 
 }
 
-
-
 SimpleFactoryStore::~SimpleFactoryStore(){
-
+  if(pizza) delete pizza;
 }
 
-
-
-
-
-Pizza * SimpleFactoryStore::createPizza(int type){
-
-	return  NULL;
+SimpleFactory::Pizza* SimpleFactoryStore::createPizza(int type)
+{
+  switch (type)
+  {
+  case 0:
+    pizza = new CheesePizza();
+    break;
+  case 1:
+    pizza = new VeggiePizza();
+    break;
+  default:
+    pizza = nullptr;
+    break;
+  }
+  return pizza;
 }

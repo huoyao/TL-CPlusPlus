@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "VeggiePizza.h"
+#include <iostream>
 
 using SimpleFactory::VeggiePizza;
 
@@ -25,15 +26,15 @@ VeggiePizza::~VeggiePizza(){
 
 
 void VeggiePizza::bake(){
-
+  std::cout <<  "veggie pizza baking\n";
 }
 
 
 void VeggiePizza::box(){
-
+  std::cout << "veggie pizza boxing\n";
 }
 
 
 void VeggiePizza::prepare(){
-
+  std::cout << "veggie pizza preparing\n";
 }

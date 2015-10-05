@@ -18,7 +18,6 @@ namespace SimpleFactory
 	public:
 		SimpleFactoryStore();
 		virtual ~SimpleFactoryStore();
-		SimpleFactory::Pizza *m_Pizza;
 
 		Pizza * createPizza(int type);
 
