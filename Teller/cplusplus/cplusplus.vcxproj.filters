@@ -75,12 +75,27 @@
     <ClCompile Include="vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryLeakCheckTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLeakWithExplicitCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLeakWithoutExplicitCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="template.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MemoryLeakChecker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestClassMemoryLeak.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SonofMemoryLeakClass.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

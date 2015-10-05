@@ -13,6 +13,8 @@
 #include "../MemoryLeakChecker.h"
 using namespace std;
 
+extern void testleak();
+
 int main()
 {
   Duck *red_duck = new RedHeadDuck();
@@ -34,6 +36,7 @@ int main()
   delete new_quak;
   delete red_duck;
   atexit(checkMemoryLeak);
+  
   system("pause");
   return 0;
 }

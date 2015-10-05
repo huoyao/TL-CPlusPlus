@@ -127,6 +127,7 @@
     <ClCompile Include="friend class.cpp" />
     <ClCompile Include="lambda.cpp" />
     <ClCompile Include="member_function_pointor.cpp" />
+    <ClCompile Include="MemoryLeakCheckTest.cpp" />
     <ClCompile Include="operator.cpp" />
     <ClCompile Include="polymorphic.cpp" />
     <ClCompile Include="queue.cpp" />
@@ -137,12 +138,16 @@
     <ClCompile Include="string.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="template_test.cpp" />
+    <ClCompile Include="TestLeakWithExplicitCheck.cpp" />
+    <ClCompile Include="TestLeakWithoutExplicitCheck.cpp" />
     <ClCompile Include="test_printf_sizeof.cpp" />
     <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryLeakChecker.h" />
+    <ClInclude Include="SonofMemoryLeakClass.h" />
     <ClInclude Include="template.h" />
+    <ClInclude Include="TestClassMemoryLeak.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
