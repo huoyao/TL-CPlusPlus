@@ -25,6 +25,15 @@
     <Filter Include="源文件\SimpleFactory">
       <UniqueIdentifier>{db7bb04a-3288-454f-995e-dde0770a68b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\FactoryMehtod">
+      <UniqueIdentifier>{85ae152c-06fe-4d09-ab83-d8552cd0a6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AbstractFactory">
+      <UniqueIdentifier>{859ce320-085a-4a7a-8901-3663b0254825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Singleton">
+      <UniqueIdentifier>{3cfd457f-55df-4f94-b661-9dc7437f6b14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Strategy\Duck.cpp">
@@ -96,12 +105,6 @@
     <ClCompile Include="SimpleFactory\CheesePizza.cpp">
       <Filter>源文件\SimpleFactory</Filter>
     </ClCompile>
-    <ClCompile Include="SimpleFactory\Pizza.cpp">
-      <Filter>源文件\SimpleFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="SimpleFactory\PizzaStore.cpp">
-      <Filter>源文件\SimpleFactory</Filter>
-    </ClCompile>
     <ClCompile Include="SimpleFactory\SimpleFactoryStore.cpp">
       <Filter>源文件\SimpleFactory</Filter>
     </ClCompile>
@@ -110,6 +113,96 @@
     </ClCompile>
     <ClCompile Include="SimpleFactory\SimpleFactoryRun.cpp">
       <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\ChicagoCheesePizza.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\ChicagoPizzaStore.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\ChicagoVeggiePizza.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\FactoryMethodRun.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\NYCheesePizza.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\NYPizzaStore.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\NYVeggiePizza.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\Pizza.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\PizzaStore.cpp">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\PizzaStore0.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\Pizza0.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\AbstractFactoryRun.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\Cheese.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\ChicagoCheese.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\ChicagoIngredientFactory.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\ChicagoSuace.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\NYCheese.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\NYIngredientFacroty.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\NYSuace.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\PizzaIngredientFactory.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\Sauce.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\CheesePizza0.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\VeggiePizza0.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\Pizza1.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\PizzaStore1.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\NYPizzaStore0.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\ChicagoPizzaStore0.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\Singleton0.cpp">
+      <Filter>源文件\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\Singleton1.cpp">
+      <Filter>源文件\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\SingletonRun.cpp">
+      <Filter>源文件\Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,12 +272,6 @@
     <ClInclude Include="SimpleFactory\CheesePizza.h">
       <Filter>源文件\SimpleFactory</Filter>
     </ClInclude>
-    <ClInclude Include="SimpleFactory\Pizza.h">
-      <Filter>源文件\SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpleFactory\PizzaStore.h">
-      <Filter>源文件\SimpleFactory</Filter>
-    </ClInclude>
     <ClInclude Include="SimpleFactory\SimpleFactoryStore.h">
       <Filter>源文件\SimpleFactory</Filter>
     </ClInclude>
@@ -193,6 +280,87 @@
     </ClInclude>
     <ClInclude Include="MemoryLeakChecker.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\ChicagoCheesePizza.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\ChicagoPizzaStore.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\ChicagoVeggiePizza.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\NYCheesePizza.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\NYPizzaStore.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\NYVeggiePizza.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\Pizza.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\PizzaStore.h">
+      <Filter>源文件\FactoryMehtod</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\PizzaStore0.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\Pizza0.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\Cheese.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\ChicagoCheese.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\ChicagoIngredientFactory.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\ChicagoSuace.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\NYCheese.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\NYIngredientFacroty.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\NYSuace.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\PizzaIngredientFactory.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\Sauce.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\CheesePizza0.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\VeggiePizza0.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\Pizza1.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\PizzaStore1.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\NYPizzaStore0.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\ChicagoPizzaStore0.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton\Singleton0.h">
+      <Filter>源文件\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton\Singleton1.h">
+      <Filter>源文件\Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

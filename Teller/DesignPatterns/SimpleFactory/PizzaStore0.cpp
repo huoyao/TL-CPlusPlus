@@ -5,7 +5,7 @@
 //  Original author: huoyao
 ///////////////////////////////////////////////////////////
 
-#include "PizzaStore.h"
+#include "PizzaStore0.h"
 #include <iostream>
 
 using SimpleFactory::PizzaStore;

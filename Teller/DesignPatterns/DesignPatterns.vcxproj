@@ -19,6 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory\AbstractFactoryRun.cpp" />
+    <ClCompile Include="AbstractFactory\Cheese.cpp" />
+    <ClCompile Include="AbstractFactory\CheesePizza0.cpp" />
+    <ClCompile Include="AbstractFactory\ChicagoCheese.cpp" />
+    <ClCompile Include="AbstractFactory\ChicagoIngredientFactory.cpp" />
+    <ClCompile Include="AbstractFactory\ChicagoPizzaStore0.cpp" />
+    <ClCompile Include="AbstractFactory\ChicagoSuace.cpp" />
+    <ClCompile Include="AbstractFactory\NYCheese.cpp" />
+    <ClCompile Include="AbstractFactory\NYIngredientFacroty.cpp" />
+    <ClCompile Include="AbstractFactory\NYPizzaStore0.cpp" />
+    <ClCompile Include="AbstractFactory\NYSuace.cpp" />
+    <ClCompile Include="AbstractFactory\Pizza1.cpp" />
+    <ClCompile Include="AbstractFactory\PizzaIngredientFactory.cpp" />
+    <ClCompile Include="AbstractFactory\PizzaStore1.cpp" />
+    <ClCompile Include="AbstractFactory\Sauce.cpp" />
+    <ClCompile Include="AbstractFactory\VeggiePizza0.cpp" />
     <ClCompile Include="Decorator\Beverage.cpp" />
     <ClCompile Include="Decorator\CodimentDecorator.cpp" />
     <ClCompile Include="Decorator\DarkRoast.cpp" />
@@ -26,6 +42,15 @@
     <ClCompile Include="Decorator\HouseBlend.cpp" />
     <ClCompile Include="Decorator\Milk.cpp" />
     <ClCompile Include="Decorator\Mocha.cpp" />
+    <ClCompile Include="FactoryMethod\ChicagoCheesePizza.cpp" />
+    <ClCompile Include="FactoryMethod\ChicagoPizzaStore.cpp" />
+    <ClCompile Include="FactoryMethod\ChicagoVeggiePizza.cpp" />
+    <ClCompile Include="FactoryMethod\FactoryMethodRun.cpp" />
+    <ClCompile Include="FactoryMethod\NYCheesePizza.cpp" />
+    <ClCompile Include="FactoryMethod\NYPizzaStore.cpp" />
+    <ClCompile Include="FactoryMethod\NYVeggiePizza.cpp" />
+    <ClCompile Include="FactoryMethod\Pizza.cpp" />
+    <ClCompile Include="FactoryMethod\PizzaStore.cpp" />
     <ClCompile Include="Observer\Displayment.cpp" />
     <ClCompile Include="Observer\Observer.cpp" />
     <ClCompile Include="Observer\ObserverRun.cpp" />
@@ -34,11 +59,14 @@
     <ClCompile Include="Observer\TemperatureHumidityDisplay.cpp" />
     <ClCompile Include="Observer\WeatherData.cpp" />
     <ClCompile Include="SimpleFactory\CheesePizza.cpp" />
-    <ClCompile Include="SimpleFactory\Pizza.cpp" />
-    <ClCompile Include="SimpleFactory\PizzaStore.cpp" />
+    <ClCompile Include="SimpleFactory\Pizza0.cpp" />
+    <ClCompile Include="SimpleFactory\PizzaStore0.cpp" />
     <ClCompile Include="SimpleFactory\SimpleFactoryRun.cpp" />
     <ClCompile Include="SimpleFactory\SimpleFactoryStore.cpp" />
     <ClCompile Include="SimpleFactory\VeggiePizza.cpp" />
+    <ClCompile Include="Singleton\Singleton0.cpp" />
+    <ClCompile Include="Singleton\Singleton1.cpp" />
+    <ClCompile Include="Singleton\SingletonRun.cpp" />
     <ClCompile Include="Strategy\Duck.cpp" />
     <ClCompile Include="Strategy\FlyWithoutWings.cpp" />
     <ClCompile Include="Strategy\FlyWithWings.cpp" />
@@ -49,12 +77,35 @@
     <ClCompile Include="Strategy\ToyDuck.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory\Cheese.h" />
+    <ClInclude Include="AbstractFactory\CheesePizza0.h" />
+    <ClInclude Include="AbstractFactory\ChicagoCheese.h" />
+    <ClInclude Include="AbstractFactory\ChicagoIngredientFactory.h" />
+    <ClInclude Include="AbstractFactory\ChicagoPizzaStore0.h" />
+    <ClInclude Include="AbstractFactory\ChicagoSuace.h" />
+    <ClInclude Include="AbstractFactory\NYCheese.h" />
+    <ClInclude Include="AbstractFactory\NYIngredientFacroty.h" />
+    <ClInclude Include="AbstractFactory\NYPizzaStore0.h" />
+    <ClInclude Include="AbstractFactory\NYSuace.h" />
+    <ClInclude Include="AbstractFactory\Pizza1.h" />
+    <ClInclude Include="AbstractFactory\PizzaIngredientFactory.h" />
+    <ClInclude Include="AbstractFactory\PizzaStore1.h" />
+    <ClInclude Include="AbstractFactory\Sauce.h" />
+    <ClInclude Include="AbstractFactory\VeggiePizza0.h" />
     <ClInclude Include="Decorator\Beverage.h" />
     <ClInclude Include="Decorator\CodimentDecorator.h" />
     <ClInclude Include="Decorator\DarkRoast.h" />
     <ClInclude Include="Decorator\HouseBlend.h" />
     <ClInclude Include="Decorator\Milk.h" />
     <ClInclude Include="Decorator\Mocha.h" />
+    <ClInclude Include="FactoryMethod\ChicagoCheesePizza.h" />
+    <ClInclude Include="FactoryMethod\ChicagoPizzaStore.h" />
+    <ClInclude Include="FactoryMethod\ChicagoVeggiePizza.h" />
+    <ClInclude Include="FactoryMethod\NYCheesePizza.h" />
+    <ClInclude Include="FactoryMethod\NYPizzaStore.h" />
+    <ClInclude Include="FactoryMethod\NYVeggiePizza.h" />
+    <ClInclude Include="FactoryMethod\Pizza.h" />
+    <ClInclude Include="FactoryMethod\PizzaStore.h" />
     <ClInclude Include="MemoryLeakChecker.h" />
     <ClInclude Include="Observer\Displayment.h" />
     <ClInclude Include="Observer\Observer.h" />
@@ -63,10 +114,12 @@
     <ClInclude Include="Observer\TemperatureHumidityDisplay.h" />
     <ClInclude Include="Observer\WeatherData.h" />
     <ClInclude Include="SimpleFactory\CheesePizza.h" />
-    <ClInclude Include="SimpleFactory\Pizza.h" />
-    <ClInclude Include="SimpleFactory\PizzaStore.h" />
+    <ClInclude Include="SimpleFactory\Pizza0.h" />
+    <ClInclude Include="SimpleFactory\PizzaStore0.h" />
     <ClInclude Include="SimpleFactory\SimpleFactoryStore.h" />
     <ClInclude Include="SimpleFactory\VeggiePizza.h" />
+    <ClInclude Include="Singleton\Singleton0.h" />
+    <ClInclude Include="Singleton\Singleton1.h" />
     <ClInclude Include="Strategy\Duck.h" />
     <ClInclude Include="Strategy\FlyBehaviour.h" />
     <ClInclude Include="Strategy\FlyWithoutWings.h" />

@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include "SimpleFactoryStore.h"
-#include "PizzaStore.h"
+#include "PizzaStore0.h"
 #include "../MemoryLeakChecker.h"
 using namespace std;
 

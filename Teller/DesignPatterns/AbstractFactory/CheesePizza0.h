@@ -1,29 +1,28 @@
 ///////////////////////////////////////////////////////////
 //  CheesePizza.h
 //  Implementation of the Class CheesePizza
-//  Created on:      04-10ÔÂ-2015 21:49:56
+//  Created on:      05-10ÔÂ-2015 19:49:53
 //  Original author: huoyao
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_BFB69B94_FC69_47fc_B101_05C8D8651F40__INCLUDED_)
-#define EA_BFB69B94_FC69_47fc_B101_05C8D8651F40__INCLUDED_
+#if !defined(EA_AD1F1280_5021_4005_8FF8_85114B7E46F8__INCLUDED_)
+#define EA_AD1F1280_5021_4005_8FF8_85114B7E46F8__INCLUDED_
 
-#include "Pizza0.h"
+#include "Pizza1.h"
 
-namespace SimpleFactory
+namespace AbstractFactory
 {
 	class CheesePizza : public Pizza
 	{
 
 	public:
 		CheesePizza();
+	  explicit CheesePizza(PizzaIngredientFactory *);
 		virtual ~CheesePizza();
 
-		virtual void bake() override;
-		virtual void box() override;
 		virtual void prepare() override;
 
 	};
 
 }
-#endif // !defined(EA_BFB69B94_FC69_47fc_B101_05C8D8651F40__INCLUDED_)
+#endif // !defined(EA_AD1F1280_5021_4005_8FF8_85114B7E46F8__INCLUDED_)
